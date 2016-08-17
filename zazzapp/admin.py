@@ -9,5 +9,4 @@ class ShoutAdmin(admin.ModelAdmin):
         obj.created_by = request.user
         obj.save()
 
-
 admin.site.register(Shout, ShoutAdmin)
