@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_nose',
     'zazzapp',
     'rest_framework',
     'rest_framework.authtoken',
@@ -51,6 +52,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+NOSE_ARGS = [
+    '--cover-erase',
+    '--cover-package=zazzapp',
 ]
 
 REST_FRAMEWORK = {
