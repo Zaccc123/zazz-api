@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'zazzapp',
     'rest_framework',
     'rest_framework.authtoken',
+    'rest_framework_docs',
 ]
 
 MIDDLEWARE = [
