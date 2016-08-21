@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.views.generic import RedirectView
 
 urlpatterns = [
+    url(r'^$', RedirectView.as_view(url='/docs/')),
     url(r'^admin/', admin.site.urls),
     url(r'^api/v1.0/', include('zazzapp.urls')),
     url(r'^docs/', include('rest_framework_docs.urls')),

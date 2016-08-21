@@ -1,4 +1,7 @@
 [![CircleCI](https://circleci.com/gh/Zaccc123/zazz-api/tree/master.svg?style=svg)](https://circleci.com/gh/Zaccc123/zazz-api/tree/master)
+[![codecov](https://codecov.io/gh/Zaccc123/zazz-api/branch/master/graph/badge.svg)](https://codecov.io/gh/Zaccc123/zazz-api)
+[![Heroku](https://heroku-badge.herokuapp.com/?app=zazz-api)](https://zazz-api.herokuapp.com/docs/)
+
 
 ## Overview
 
