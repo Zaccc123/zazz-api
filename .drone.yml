@@ -8,3 +8,5 @@ pipeline:
 services:
   postgres:
     image: postgres:9.5.2
+    environment:
+      - POSTGRES_USER=zazzuser
