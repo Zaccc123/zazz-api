@@ -2,11 +2,11 @@ pipeline:
   build:
     image: python:3-onbuild
     commands:
+      - export DB_NAME=zazz
+      - export DB_USER=postgres
       - pip install -r requirements.txt
       - python manage.py test
 
 services:
   postgres:
     image: postgres:9.5.2
-    environment:
-      - POSTGRES_USER=zazzuser
