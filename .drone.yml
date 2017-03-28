@@ -2,11 +2,8 @@ pipeline:
   build:
     image: python:3-onbuild
     commands:
-      - pip install virtualenv
-      - virtualenv --no-site-packages create_env
-      - source create_env/bin/activate
       - pip install -r requirements.txt
-      - python tasks/manage.py test
+      - python manage.py test
 
 services:
   postgres:
